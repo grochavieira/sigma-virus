@@ -41,19 +41,36 @@ Projeto final da matéria de desenvolvimento de jogos digitais
 
 ## ⚙️ Funcionalidades
 
-- [x] Menu para escolher entre modo singleplayer e multiplayer;
-- [x] Tela de fundo com movimentação;
-- [x] Singleplayer:
-  - [x] Você controla um foguete para atirar e movimentar pela tela inteira;
-  - [x] Espaçonaves aparecem do lado direto da tela de forma/vida/tamanho aleatórios;
-  - [x] Sistema de vidas - perde ao tocar em um inimigo ou quando eles chegam no fim da tela;
-  - [x] Capacidade de deixar os elementos do jogo mais devagares por 10 segundos a cada 5000 pontos feitos;
-  - [x] O jogo acaba quando a vida do jogador acabar.
-- [x] Multiplayer:
-  - [x] As mesmas funcionalidades que singleplayer;
-  - [x] Sistema de vidas para ambos os jogadores;
-  - [x] O jogo acaba quando a vida de um dos jogadores acabar;
-  - [x] Os inimigos aparecem com mais frequência no multiplayer.
+- [x] Menu para iniciar o jogo;
+- [x] Jogador:
+  - [x] Animação feita por sprites (de acordo com o seu movimento);
+  - [x] Aceleração ao correr;
+  - [x] Pode pular;
+  - [x] Consegue atirar:
+    - [x] 5 tiros de uma vez (só consegue atirar mais se algum dos outros 5 desaparecerem);
+    - [x] O tiro desaparece a uma certa distância.
+  - [x] Tem sistema de vidas:
+    - [x] Perde uma ao tocar nos inimigos;
+    - [x] Morre se cair em um abistmo.
+- [x] Inimigos:
+  - [x] animação feita por sprite (de acordo com o seu movimento);
+  - [x] IA Básica:
+    - [x] Se movimenta de um lado para o outros;
+    - [x] Se estiver a uma certa distância x e y do jogador,começa a segui-lo.
+  - [x] O tipo de inimigo 3 é o único capaz de pular.
+- [x] Score:
+  - [x] 100 pontos a cada acerto de tiro nos inimigos;
+  - [x] (100 \* vida do inimigo) a cada inimigo derrotado.
+- [x] Mapa do Jogo:
+  - [x] Foi produzido com tiles (bloquinhos);
+  - [x] 5 mapas;
+  - [x] Ao fim de cada mapa o jogador passa para a próxima fase;
+  - [x] Foi criado uma colisão entre o jogador e inimigos com os tiles.
+- [x] Câmera:
+  - [x] A câmera segue o jogador;
+  - [x] Câmera na posição x e y.
+- [x] Tela ao perder o jogo;
+- [x] Tela ao passar de fase.
 
 ---
 
@@ -102,17 +119,20 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ---
 
-<a name="-autores"></a>
+<a name="-autor"></a>
 
 ## 🦸‍♂️ **Autor**
 
-<img src="https://avatars.githubusercontent.com/u/48029638?s=460&u=40540691957b5aabf04e2e1d4cddf8d3633cb1be&v=4" width="150px;" alt="grochavieira"/>
-<br />
-<sub>
-    <strong>
-        🌟 Guilherme Rocha Vieira 🌟
-    </strong>
-</sub>
+<p>
+ <img src="https://avatars.githubusercontent.com/u/48029638?s=460&u=40540691957b5aabf04e2e1d4cddf8d3633cb1be&v=4" width="150px;" alt="grochavieira"/>
+ <br />
+ <sub><strong>🌟 Guilherme Rocha Vieira 🌟</strong></sub>
+</p>
+
+<p align="center">
+
+[![Linkedin Badge](https://img.shields.io/badge/-linkedin-blue?style=flat&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/grochavieira/)](https://www.linkedin.com/in/grochavieira/)
+
 </p>
 
 ---
