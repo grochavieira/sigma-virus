@@ -51,7 +51,7 @@ Projeto final da matéria de desenvolvimento de jogos digitais
     - [x] O tiro desaparece a uma certa distância.
   - [x] Tem sistema de vidas:
     - [x] Perde uma ao tocar nos inimigos;
-    - [x] Morre se cair em um abistmo.
+    - [x] Morre se cair em um abismo.
 - [x] Inimigos:
   - [x] animação feita por sprite (de acordo com o seu movimento);
   - [x] IA Básica:
