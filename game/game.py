@@ -16,8 +16,6 @@ def read_csv(filename):
             map.append(list(row))
     return map
 
-game_map = read_csv('./maps/stage_two.csv')
-
 class GameState():
     def __init__(self):
         self.state = "menu"
@@ -216,26 +214,25 @@ class GameState():
     def menu(self):
         self.is_running = True
         self.current_level = 1
-        # title = engine.Element("assets/menu/title", 1, settings.screen_width/2, 50, 1, 0.07)
+        title = engine.Element("assets/menu/title/title", 6, settings.screen_width/2, 50, 1, 0.05)
+        eye = engine.Element("assets/menu/eye/eye", 1, settings.screen_width/2, 250, 1, 0.07)
 
         text_group = pygame.sprite.Group()
-        # text_group.add(title)
+        text_group.add(title)
+        text_group.add(eye)
         
 
-        singleplayer_button = engine.Button(
-            "assets/sg_btn/singleplayer", 13, settings.screen_width/2, 400, 0.6, 0.07)
+        play_button = engine.Button("assets/play_btn/play", 2, settings.screen_width/2, 450, 0.8, 0.03)
         
-        #multiplayer_button = engine.Button("assets/mp_btn/multiplayer", 12, settings.screen_width/2, 550, 0.6, 0.07)
+        info_button = engine.Button("assets/info_btn/info", 2, settings.screen_width/2, 550, 0.8, 0.03)
 
         button_group = pygame.sprite.Group()
-        button_group.add(singleplayer_button)
-        #button_group.add(multiplayer_button)
+        button_group.add(play_button)
+        button_group.add(info_button)
 
         mouse = engine.Mouse()
         mouse_group = pygame.sprite.Group()
         mouse_group.add(mouse)
-
-        settings.zombie_theme.play()
 
         while self.is_running:
             for event in pygame.event.get():
@@ -266,8 +263,8 @@ class GameState():
                         
             
             settings.screen.fill(settings.bg_color)
-            self.background_group.draw(settings.screen)
-            self.background_group.update()
+            # self.background_group.draw(settings.screen)
+            # self.background_group.update()
 
             button_group.draw(settings.screen)
             text_group.draw(settings.screen)
@@ -316,14 +313,13 @@ class GameState():
         self.is_running = True
         self.current_level = 1
         settings.score = 0
-        settings.zombie_theme.fadeout(10)
         settings.level_collision = 160 * 32
         settings.collision_wall = 32 * 32
 
         self.generate_map('./maps/stage_one.csv')
 
         while self.is_running:
-            self.game_events('assets/backgrounds/night-city.png')
+            self.game_events('assets/backgrounds/city.png')
 
     def level2(self):
         self.is_running = True
