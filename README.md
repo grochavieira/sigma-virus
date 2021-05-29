@@ -106,17 +106,14 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ## 🦸‍♂️ **Autor**
 
-<table align="center" width="100%">
-  <tr align="center">
-    <td>
-      <img src="https://avatars.githubusercontent.com/u/48029638?s=460&u=40540691957b5aabf04e2e1d4cddf8d3633cb1be&v=4" width="150px;" alt="grochavieira"/>
-      <br />
-      <sub><strong>🌟 Guilherme Rocha Vieira 🌟</strong></sub>
-      </p>
-    </td>
-  </tr>
-
-</table>
+<img src="https://avatars.githubusercontent.com/u/48029638?s=460&u=40540691957b5aabf04e2e1d4cddf8d3633cb1be&v=4" width="150px;" alt="grochavieira"/>
+<br />
+<sub>
+    <strong>
+        🌟 Guilherme Rocha Vieira 🌟
+    </strong>
+</sub>
+</p>
 
 ---
 
