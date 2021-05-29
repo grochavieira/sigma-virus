@@ -15,9 +15,9 @@ screen = pygame.display.set_mode((screen_width, screen_height), 0, 32)
 
 display = pygame.Surface((600, 400))
 
-pygame.display.set_caption("Journey in the Land of Zombies | ゾンビの国の旅")  # titulo
+pygame.display.set_caption("Sigma Virus")  # titulo
 
-bg_color = pygame.Color("#76d7ea")  # cor de fundo
+bg_color = pygame.Color("#e5e5e5")  # cor de fundo
 font_color = pygame.Color("#ffffff") # cor da fonte
 basic_font = pygame.font.Font("fonts/8-BIT-WONDER.ttf", 20)  # carrega a fonte
 
@@ -31,7 +31,6 @@ hit_sound = pygame.mixer.Sound("audio/hit.wav")
 button_sound = pygame.mixer.Sound("audio/button.wav") 
 slow_time_sound = pygame.mixer.Sound("audio/slow_time.mp3") 
 time_resume_sound = pygame.mixer.Sound("audio/time_resume.mp3") 
-zombie_theme = pygame.mixer.Sound("audio/zombiegame_low_audio.mp3") 
 
 # score do jogo
 score = 0
