@@ -26,10 +26,6 @@ class GameState():
         self.enemy_group = pygame.sprite.Group()
         self.bullet_group = pygame.sprite.Group()
         self.game_manager = engine.GameManager(self.player_group, self.enemy_group, self.bullet_group)
-        farback = engine.AutoMovingBackground("assets/backgrounds/farback.png", 0, 0, 1)
-        logo = engine.AutoMovingBackground("assets/backgrounds/logo.png", 0, 0, 0)
-        self.background_group.add(farback)
-        self.background_group.add(logo)
         self.player = {}
         self.tile_rects = []
         self.tile_map = None
@@ -54,9 +50,13 @@ class GameState():
 
     def game_events(self, bg_level):
         if self.player.PASSED_LEVEL:
-            self.state = 'passed_level'
+            if (self.current_level < 5):
+                self.state = 'passed_level'
+            else:
+                self.state = 'lose_screen'
             self.game_manager.reset_game()
             self.is_running = False
+
 
         if self.player.life <= 0:
             self.state = "lose_screen"
@@ -178,12 +178,12 @@ class GameState():
         self.is_running = True
 
         passed_level_text = settings.basic_font.render(
-            "You passed level" + str(self.current_level), True, settings.font_color)
+            "You passed level " + str(self.current_level), True, settings.black_font_color)
         passed_level_text_rect = passed_level_text.get_rect(
             center=(settings.screen_width/2, settings.screen_height/2 - 50))
 
         press_space_text = settings.basic_font.render(
-            "Press space to proceed no next level", True, settings.font_color)
+            "Press space to proceed to next level", True, settings.black_font_color)
         press_space_text_rect = press_space_text.get_rect(
             center=(settings.screen_width/2, settings.screen_height/2 + 50))
 
@@ -221,14 +221,13 @@ class GameState():
         text_group.add(title)
         text_group.add(eye)
         
-
         play_button = engine.Button("assets/play_btn/play", 2, settings.screen_width/2, 450, 0.8, 0.03)
         
-        info_button = engine.Button("assets/info_btn/info", 2, settings.screen_width/2, 550, 0.8, 0.03)
+        # info_button = engine.Button("assets/info_btn/info", 2, settings.screen_width/2, 550, 0.8, 0.03)
 
         button_group = pygame.sprite.Group()
         button_group.add(play_button)
-        button_group.add(info_button)
+        # button_group.add(info_button)
 
         mouse = engine.Mouse()
         mouse_group = pygame.sprite.Group()
@@ -239,8 +238,7 @@ class GameState():
                 if event.type == pygame.QUIT:
                     pygame.quit()
                     sys.exit()
-                
-                # se apertou alguma tecla
+
                 if event.type == pygame.KEYDOWN:
                     if event.key == pygame.K_ESCAPE:
                         self.state = "menu"
@@ -253,19 +251,11 @@ class GameState():
                         print(collision_button.bottom)
                         if collision_button.bottom <= 500:
                             settings.button_sound.play()
-                            self.state = "level1"
+                            self.state = "level" + str(self.current_level)
                             self.is_running = False
-                        # elif collision_button.bottom <= 800:
-                        #     settings.button_sound.play()
-                        #     print("multiplayer")
-                        #     self.state = "menu"
-                        #     self.is_running = False
-                        
             
             settings.screen.fill(settings.bg_color)
-            # self.background_group.draw(settings.screen)
-            # self.background_group.update()
-
+            
             button_group.draw(settings.screen)
             text_group.draw(settings.screen)
             mouse_group.draw(settings.screen)
@@ -330,7 +320,7 @@ class GameState():
         self.generate_map('./maps/stage_two.csv')
 
         while self.is_running:
-            self.game_events('assets/backgrounds/night-city.png')
+            self.game_events('assets/backgrounds/city.png')
     
     def level3(self):
         self.is_running = True
@@ -341,7 +331,7 @@ class GameState():
         self.generate_map('./maps/stage_three.csv')
 
         while self.is_running:
-            self.game_events('assets/backgrounds/night-city.png')
+            self.game_events('assets/backgrounds/city.png')
     
     def level4(self):
         self.is_running = True
@@ -352,7 +342,7 @@ class GameState():
         self.generate_map('./maps/stage_four.csv')
 
         while self.is_running:
-            self.game_events('assets/backgrounds/night-city.png')
+            self.game_events('assets/backgrounds/city.png')
     
     def level5(self):
         self.is_running = True
@@ -363,7 +353,7 @@ class GameState():
         self.generate_map('./maps/stage_five.csv')
 
         while self.is_running:
-            self.game_events('assets/backgrounds/night-city.png')
+            self.game_events('assets/backgrounds/city.png')
             
     
   
