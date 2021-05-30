@@ -107,10 +107,8 @@ class Enemy(CharacterBlock):
         self.screen_constrain()
     
     def enemy_ai(self):
-        if not self.CHASING_PLAYER and abs(abs(self.player.sprite.rect.x) - abs(self.rect.x)) <= 200 and abs(abs(self.player.sprite.rect.y) - abs(self.rect.y)) <= 100:
+        if not self.CHASING_PLAYER and abs(abs(self.player.sprite.rect.x) - abs(self.rect.x)) <= 200 and abs(abs(self.player.sprite.rect.y) - abs(self.rect.y)) <= 50:
             self.CHASING_PLAYER = True
-        else:
-            self.CHASING_PLAYER = False
 
         if self.zombie_type == 3:
             current_time = pygame.time.get_ticks()

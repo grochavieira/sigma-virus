@@ -15,7 +15,7 @@
 </h1>
 
 <h4 align="center"> 
-	:construction:  Aplicação em desenvolvimento... :construction:
+	:tada:  Aplicação finalizada :tada:
 </h4>
 
 ## 🏁 Tópicos
@@ -119,21 +119,33 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ---
 
-<a name="-autor"></a>
+<a name="-autores"></a>
 
-## 🦸‍♂️ **Autor**
+## 🦸‍♂️ **Autores**
 
-<p>
- <img src="https://avatars.githubusercontent.com/u/48029638?s=460&u=40540691957b5aabf04e2e1d4cddf8d3633cb1be&v=4" width="150px;" alt="grochavieira"/>
- <br />
- <sub><strong>🌟 Guilherme Rocha Vieira 🌟</strong></sub>
-</p>
+<table align="center" width="100%">
+  <tr align="center">
+    <td>
+      <img src="https://avatars.githubusercontent.com/u/48029638?s=460&u=40540691957b5aabf04e2e1d4cddf8d3633cb1be&v=4" width="150px;" alt="grochavieira"/>
+      <br />
+      <sub><strong>🌟 Guilherme Rocha Vieira 🌟</strong></sub>
+      </p>
+    </td>
+    <td>
+      <img src="https://avatars.githubusercontent.com/u/48140030?v=4" width="150px;" alt="thomasafc"/>
+      <br />
+      <sub><strong>🌟 Thomas Anderson 🌟</strong></sub>
+      </p>
+    </td>
+    <td>
+      <img src="https://avatars.githubusercontent.com/u/49913795?s=400&u=4025fc41010d4a87d90cf658156b1d7807c69ac8&v=4" width="150px;" alt="victorM"/>
+      <br />
+      <sub><strong>🔥 Victor Masumoto 🔥</strong></sub>
+      </p>
+    </td>
+  </tr>
 
-<p align="center">
-
-[![Linkedin Badge](https://img.shields.io/badge/-linkedin-blue?style=flat&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/grochavieira/)](https://www.linkedin.com/in/grochavieira/)
-
-</p>
+</table>
 
 ---
 

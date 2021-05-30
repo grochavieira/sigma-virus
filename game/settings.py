@@ -19,6 +19,7 @@ pygame.display.set_caption("Sigma Virus")  # titulo
 
 bg_color = pygame.Color("#e5e5e5")  # cor de fundo
 font_color = pygame.Color("#ffffff") # cor da fonte
+black_font_color = pygame.Color("#000000") # cor da fonte
 basic_font = pygame.font.Font("fonts/8-BIT-WONDER.ttf", 20)  # carrega a fonte
 
 slow_time = 1
@@ -36,13 +37,6 @@ time_resume_sound = pygame.mixer.Sound("audio/time_resume.mp3")
 score = 0
 moving_bg = 0
 
-# collision wall
+# level collisions 
 collision_level = 0
 collision_wall = 0
-
-
-# FASE 01 - TOTAL 288x48 == 239x48
-# FASE 02 - 80 x 32
-# FASE 03 - 144 x 64 - 144 x 58
-# FASE 04 - 103 x 80 - 103 x 67
-# FASE 05 - 160 x 32 - 160 x 17
