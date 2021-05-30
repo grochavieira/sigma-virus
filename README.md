@@ -23,7 +23,7 @@
 <p>
  👉<a href="#-sobre-o-projeto" style="text-decoration: none; "> Sobre</a> <br/>
 👉<a href="#-funcionalidades" style="text-decoration: none; "> Funcionalidades</a> <br/>
-👉<a href="#-layout" style="text-decoration: none"> Layout</a> <br/>
+👉<a href="#-demonstracao" style="text-decoration: none"> Demonstração</a> <br/>
 👉<a href="#-como-executar-o-projeto" style="text-decoration: none"> Como executar</a> <br/>
 👉<a href="#-tecnologias" style="text-decoration: none"> Tecnologias</a> <br/>
 👉<a href="#-autores" style="text-decoration: none"> Autores</a> <br/>
@@ -74,7 +74,13 @@ Projeto final da matéria de desenvolvimento de jogos digitais
 
 ---
 
-## 🎨 Layout
+## 🕹️ Demonstração
+
+<a name="-demonstracao"></a>
+
+<a align="center" href="#">
+    <img alt="sigma-virus demonstração" src="https://img.shields.io/static/v1?label=post&message=sigma-virus&color=0072B1&style=flat&logo=linkedin">
+</a>
 
 ---
 
