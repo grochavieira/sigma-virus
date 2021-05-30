@@ -78,7 +78,7 @@ Projeto final da matéria de desenvolvimento de jogos digitais
 
 <a name="-demonstracao"></a>
 
-<a align="center" href="#">
+<a align="center" href="https://www.linkedin.com/feed/update/urn:li:activity:6804811980931780608/">
     <img alt="sigma-virus demonstração" src="https://img.shields.io/static/v1?label=post&message=sigma-virus&color=0072B1&style=flat&logo=linkedin">
 </a>
 
